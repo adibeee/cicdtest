@@ -17,6 +17,6 @@ def add_endpoint():
   except ValueError:
     return jsonify(error="Invalid input"), 400
     return jsonify(result=add(a, b))
-
-if __name__ == "__main__":
-  app.run(host="0.0.0.0", port=8080)
+def app():
+  if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8080)
