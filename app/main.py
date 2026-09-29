@@ -12,7 +12,7 @@ def hello():
 @app.route("/add")
 def add_endpoint():
   try:
-    a = float(request.args.get("a", "2"))
+    a = float(request.args.get("a", "0"))
     b = float(request.args.get("b", "0"))
   except ValueError:
     return jsonify(error="Invalid input"), 400
